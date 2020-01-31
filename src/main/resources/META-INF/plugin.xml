@@ -1,0 +1,41 @@
+<idea-plugin>
+    <id>com.github.sbouclier.intellij.intellij-plugin-builder</id>
+    <name>Java Builder pattern</name>
+    <vendor url="https://github.com/sbouclier/intellij-plugin-designpatterns">Stéphane Bouclier</vendor>
+
+    <description><![CDATA[
+    This plugin provide ability to generate easily Java builder design patterns by two ways :<br/>
+    <ul>
+        <li>Classic builder pattern</li>
+		<li>Fluent builder with interfaces</li>
+	</ul>
+    <br/>
+    Do you like it? You can give it a star at <a href="https://github.com/sbouclier/intellij-plugin-builder">GitHub</a>.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService
+                serviceImplementation="com.github.sbouclier.intellij.plugin.javabuilderpattern.service.BuilderPrefs"/>
+    </extensions>
+
+    <actions>
+        <group id="builder-group" text="Builder pattern">
+            <add-to-group group-id="GenerateGroup" anchor="last"  />
+            <separator/>
+            <action id="builder-group.builder" text="Builder"
+                    class="com.github.sbouclier.intellij.plugin.javabuilderpattern.action.BuilderAction"/>
+        </group>
+    </actions>
+
+    <change-notes><![CDATA[
+		<h3>1.0.0: Initial release of the plugin :</h3>
+		<ul>
+			<li>Generate classic builder pattern</li>
+			<li>Generate fluent builder with interfaces</li>
+		</ul>
+	]]></change-notes>
+</idea-plugin>
