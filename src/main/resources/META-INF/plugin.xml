@@ -1,16 +1,17 @@
 <idea-plugin>
-    <id>com.github.sbouclier.intellij.intellij-plugin-builder</id>
+    <id>com.github.sbouclier.intellij.plugin.intellij-plugin-java-builder-pattern</id>
     <name>Java Builder pattern</name>
-    <vendor url="https://github.com/sbouclier/intellij-plugin-designpatterns">Stéphane Bouclier</vendor>
+    <vendor url="https://github.com/sbouclier/intellij-plugin-java-builder-pattern">Stéphane Bouclier</vendor>
 
     <description><![CDATA[
-    This plugin provide ability to generate easily Java builder design patterns by two ways :<br/>
+    This plugin provide ability to generate easily Java builder design patterns by two ways:<br/>
     <ul>
         <li>Classic builder pattern</li>
 		<li>Fluent builder with interfaces</li>
 	</ul>
+	See <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/README.md">README</a> for more information.
     <br/>
-    Do you like it? You can give it a star at <a href="https://github.com/sbouclier/intellij-plugin-builder">GitHub</a>.
+    Do you like it? You can give it a star at <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern">GitHub</a>.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
@@ -32,7 +33,7 @@
     </actions>
 
     <change-notes><![CDATA[
-		<h3>1.0.0: Initial release of the plugin :</h3>
+		<h3>1.0.0: Initial release of the plugin:</h3>
 		<ul>
 			<li>Generate classic builder pattern</li>
 			<li>Generate fluent builder with interfaces</li>
