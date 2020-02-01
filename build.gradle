@@ -1,10 +1,11 @@
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.16'
+    id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
 }
 
 group 'com.github.sbouclier.intellij.plugin'
-version '1.0.0-SNAPSHOT'
+version '1.0.0'
 
 sourceCompatibility = 1.8
 
