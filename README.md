@@ -1,10 +1,16 @@
 # intellij-plugin-java-builder-pattern
 
-Java Builder Pattern plugin for Intellij IDEA with two types of builder :
+<b>Java Builder Pattern</b> plugin for Intellij IDEA with two types of builder :
 - classic builder
 - fluent builder with interfaces
 
 Available on Jetbrains repository: https://plugins.jetbrains.com/plugin/13749-java-builder-pattern
+
+## Setup
+
+Open File > Settings > Plugins. The easy way to find it is by searching `java fluent builder pattern` and to install <b>Java Builder pattern</b>:
+
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/install.png?raw=true "Install")
 
 ## Quickstart
 

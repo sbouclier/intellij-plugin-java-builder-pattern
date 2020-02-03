@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.github.sbouclier.intellij.plugin.intellij-plugin-java-builder-pattern</id>
-    <name>Java Builder pattern</name>
+    <name>Java Builder Pattern</name>
     <vendor url="https://github.com/sbouclier/intellij-plugin-java-builder-pattern">Stéphane Bouclier</vendor>
 
     <description><![CDATA[
