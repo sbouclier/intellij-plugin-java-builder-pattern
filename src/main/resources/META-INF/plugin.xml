@@ -9,9 +9,8 @@
         <li>Classic builder pattern</li>
 		<li>Fluent builder with interfaces</li>
 	</ul>
-	See <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/README.md">README</a> for more information.
-    <br/>
-    Do you like it? You can give it a star at <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern">GitHub</a>.
+	<br/>
+	See <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/README.md">README</a> for more information. Do you like it? You can give it a star at <a href="https://github.com/sbouclier/intellij-plugin-java-builder-pattern">GitHub</a>.
     ]]></description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html

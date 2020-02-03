@@ -4,6 +4,8 @@ Java Builder Pattern plugin for Intellij IDEA with two types of builder :
 - classic builder
 - fluent builder with interfaces
 
+Available on Jetbrains repository: https://plugins.jetbrains.com/plugin/13749-java-builder-pattern
+
 ## Quickstart
 
 Create a class with members, in this example :
