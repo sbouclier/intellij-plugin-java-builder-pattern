@@ -10,8 +10,18 @@ import java.util.List;
  * Abstract table model for parameters to Builder dialog.
  */
 public abstract class AbstractBuilderTableModel extends AbstractTableModel {
+
+    protected static final String HEADER_PARAMETER_NAME = "Parameter name";
+    protected static final String HEADER_SETTER_NAME = "Setter name";
+    protected static final String HEADER_CONSTRUCTOR_NAME = "Constructor";
+    protected static final String HEADER_MANDATORY_NAME = "Mandatory";
+
     protected List<BuilderParameter> parameters = new ArrayList<>();
 
+    /**
+     * Table headers.
+     * @return headers
+     */
     abstract String[] getHeaders();
 
     @Override

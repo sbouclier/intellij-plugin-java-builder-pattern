@@ -14,7 +14,11 @@ public class ParametersFluentBuilderTableModel extends AbstractBuilderTableModel
 
     @Override
     String[] getHeaders() {
-        return new String[]{"Parameter name", "Setter name", "Mandatory", "Constructor"};
+        return new String[]{
+                HEADER_PARAMETER_NAME,
+                HEADER_SETTER_NAME,
+                HEADER_MANDATORY_NAME,
+                HEADER_CONSTRUCTOR_NAME};
     }
 
     @Override

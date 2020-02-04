@@ -61,12 +61,15 @@ public class BuilderDialog extends JDialog {
         builderParamsTable.setModel(createParametersTableModel(parameters));
         builderParamsTable.setSelectionMode(MULTIPLE_INTERVAL_SELECTION);
         builderParamsTable.setRowSelectionAllowed(true);
+        builderParamsTable.getSelectionModel().addListSelectionListener(event -> {
+            buttonOK.setEnabled(builderParamsTable.getSelectedRows().length > 0);
+        });
 
         cbUsePrefix.addItemListener(e -> handleUpdateUsePrefix(parameters));
         txtPrefix.getDocument().addDocumentListener((UpdateDocumentListener) e -> refreshParametersWithPrefix(txtPrefix.getText(), parameters));
 
         // config
-        if(builderPrefs.getBuilderType() == BuilderType.CLASSIC) {
+        if (builderPrefs.getBuilderType() == BuilderType.CLASSIC) {
             radioBtnClassic.setSelected(true);
         } else {
             radioBtnFluent.setSelected(true);
@@ -100,7 +103,7 @@ public class BuilderDialog extends JDialog {
 
     private AbstractBuilderTableModel createParametersTableModel(List<BuilderParameter> parameters) {
         final AbstractBuilderTableModel tableModel;
-        if(radioBtnClassic.isSelected()) {
+        if (radioBtnClassic.isSelected()) {
             tableModel = new ParametersClassicBuilderTableModel();
         } else {
             tableModel = new ParametersFluentBuilderTableModel();
