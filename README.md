@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sbouclier/intellij-plugin-java-builder-pattern.svg?branch=master)](https://travis-ci.org/sbouclier/intellij-plugin-java-builder-pattern)
+
 # intellij-plugin-java-builder-pattern
 
 <b>Java Builder Pattern</b> plugin for Intellij IDEA with two types of builder :
