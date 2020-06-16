@@ -1,13 +1,13 @@
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.16'
-    id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
+    //id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
     id 'jacoco'
     id 'com.github.kt3k.coveralls' version '2.8.4'
 }
 
 group 'com.github.sbouclier.intellij.plugin'
-version '1.1.0'
+version '1.2.0'
 
 sourceCompatibility = 1.8
 
@@ -36,7 +36,11 @@ intellij {
 }
 
 patchPluginXml {
+    version '1.2.0'
+    sinceBuild '193'
+    untilBuild '201.*'
     changeNotes """
+      1.2.0: Compatibility with IntelliJ 2020 version<br>
       1.1.0: 'OK' button is only enabled when at least one builder parameter is selected<br>
       1.0.0: Initial release of the plugin :<br>
       <ul>
