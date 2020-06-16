@@ -14,7 +14,10 @@ public class ParametersClassicBuilderTableModel extends AbstractBuilderTableMode
 
     @Override
     String[] getHeaders() {
-        return new String[]{"Parameter name", "Setter name", "Constructor"};
+        return new String[]{
+                HEADER_PARAMETER_NAME,
+                HEADER_SETTER_NAME,
+                HEADER_CONSTRUCTOR_NAME};
     }
 
     @Override

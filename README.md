@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/sbouclier/intellij-plugin-java-builder-pattern.svg?branch=master)](https://travis-ci.org/sbouclier/intellij-plugin-java-builder-pattern)
+
 # intellij-plugin-java-builder-pattern
 
 <b>Java Builder Pattern</b> plugin for Intellij IDEA with two types of builder :
@@ -10,7 +12,7 @@ Available on Jetbrains repository: https://plugins.jetbrains.com/plugin/13749-ja
 
 Open File > Settings > Plugins. The easy way to find it is by searching `java fluent builder pattern` and to install <b>Java Builder pattern</b>:
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/install.png?raw=true "Install")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/install.png?raw=true "Install")
 
 ## Quickstart
 
@@ -29,13 +31,13 @@ public class Employee {
 
 Set your cursor inside the class where you want to generate the builder code, then right click and open 'Generate' menu :
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/generate.png?raw=true "Generate")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/generate.png?raw=true "Generate")
 
 Click on Builder menu, this will open a dialog box. You have choice to generate two types of builder :
 
 ### Classic builder
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/classic_builder.png?raw=true "Classic builder")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/classic_builder.png?raw=true "Classic builder")
 
 First, select which class members you want to include in constructor builder. You can also override parameter methods by using prefix. Then select members you want to include and click on OK button, this will generate the builder code.
 You can now build your class like this :
@@ -51,7 +53,7 @@ Employee johnDoe = Employee.builder("123")
 
 ### Fluent builder with interfaces
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/builder_with_interfaces.png?raw=true "Builder with interfaces")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/builder_with_interfaces.png?raw=true "Builder with interfaces")
 
 Same steps as classic builder except you can now select mandatory/optional parameters. You can only select constructor parameters for mandatory parameters.
 You can build your class like this (as classic builder) :
@@ -69,8 +71,8 @@ But using auto completion, Intellij will provide you next valid parameter.
 
 Next mandatory parameter:
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/mandatory_parameter_completion.png?raw=true "Auto completion of next mandatory parameter")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/mandatory_parameter_completion.png?raw=true "Auto completion of next mandatory parameter")
 
 Next optional parameter(s):
 
-![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/public/images/optional_parameter_completion.png?raw=true "Auto completion of next optional parameter(s)")
+![alt text](https://github.com/sbouclier/intellij-plugin-java-builder-pattern/blob/master/assets/images/optional_parameter_completion.png?raw=true "Auto completion of next optional parameter(s)")

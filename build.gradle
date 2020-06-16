@@ -2,10 +2,12 @@ plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.16'
     id 'fr.brouillard.oss.gradle.jgitver' version '0.9.1'
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.8.4'
 }
 
 group 'com.github.sbouclier.intellij.plugin'
-version '1.0.0'
+version '1.1.0'
 
 sourceCompatibility = 1.8
 
@@ -17,13 +19,25 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
+jacoco {
+    toolVersion = "0.8.5"
+}
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
+
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version '2019.3.2'
+    version '2020.1'
     plugins 'java'
 }
+
 patchPluginXml {
     changeNotes """
+      1.1.0: 'OK' button is only enabled when at least one builder parameter is selected<br>
       1.0.0: Initial release of the plugin :<br>
       <ul>
 			<li>Generate classic builder pattern</li>
